@@ -4,51 +4,73 @@
   
     
     <entry>
-      <title>“testdemo”</title>
-      <link href="/2022/12/23/%E2%80%9Ctestdemo%E2%80%9D/"/>
-      <url>/2022/12/23/%E2%80%9Ctestdemo%E2%80%9D/</url>
+      <title>深度学习 深层神经网络</title>
+      <link href="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+      <url>/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2022/12/23/hello-world/"/>
-      <url>/2022/12/23/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>基于Hexo的hexo-theme-matery主题搭建博客并优化</title>
-      <link href="/2019/10/03/%E5%9F%BA%E4%BA%8EHexo-matery%E4%BC%98%E5%8C%96/"/>
-      <url>/2019/10/03/%E5%9F%BA%E4%BA%8EHexo-matery%E4%BC%98%E5%8C%96/</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="第三节-深层神经网络"><a href="#第三节-深层神经网络" class="headerlink" title="第三节 深层神经网络"></a>第三节 深层神经网络</h2><h4 id="第四周：深层神经网络-Deep-Neural-Networks"><a href="#第四周：深层神经网络-Deep-Neural-Networks" class="headerlink" title="第四周：深层神经网络(Deep Neural Networks)"></a>第四周：深层神经网络(Deep Neural Networks)</h4><p><a href="http://www.ai-start.com/dl2017/html/lesson1-week4.html">参考这节课网页笔记</a></p><p><a href="https://www.bilibili.com/video/BV1FT4y1E74V?p=36&vd_source=8425538b68a52ed42a5daa09e2318b20">参考视频</a></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101170919824.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101170944140.png"></p><h5 id="前向传播"><a href="#前向传播" class="headerlink" title="前向传播"></a>前向传播</h5><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101171256537.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101171324543.png"></p><h5 id="后向传播"><a href="#后向传播" class="headerlink" title="后向传播"></a>后向传播</h5><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101171336655.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101171348555.png" alt="image-20221101171348555"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101171403586.png"></p><h5 id="矩阵维数"><a href="#矩阵维数" class="headerlink" title="矩阵维数"></a>矩阵维数</h5><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101172122099.png"></p><h5 id="搭建神经网络块"><a href="#搭建神经网络块" class="headerlink" title="搭建神经网络块"></a>搭建神经网络块</h5><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101172212447.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101172232196.png"></p><h5 id="参数VS超参数"><a href="#参数VS超参数" class="headerlink" title="参数VS超参数"></a>参数VS超参数</h5><p>&#x3D;&#x3D;参数是 W[L], b[L]&#x3D;&#x3D;</p><p>&#x3D;&#x3D;超参数就是控制参数的参数&#x3D;&#x3D;</p><p><strong>learning rate</strong> （学习率）</p><p><strong>iterations</strong>(梯度下降法循环的数量)</p><p><strong>L</strong>（隐藏层数目）</p><p>**n[L]**（隐藏层单元数目）</p><p><strong>choice of activation function</strong>（激活函数的选择）</p><p>这些数字实际上控制了最后的参数和的值，所以它们被称作超参数。</p><p>实际上深度学习有很多不同的超参数，之后我们也会介绍一些其他的超参数，如<strong>momentum</strong>、<strong>mini batch size</strong>、<strong>regularization parameters</strong>等等。</p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221101173759874.png"></p>]]></content>
       
       
       <categories>
           
-          <category> 工具 </category>
+          <category> 深度学习 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> blog </tag>
+            <tag> DeepLearning </tag>
             
-            <tag> hexo </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>深度学习 浅层神经网络</title>
+      <link href="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E8%8A%82%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+      <url>/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E8%8A%82%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</url>
+      
+        <content type="html"><![CDATA[<h2 id="第二节-浅层神经网络"><a href="#第二节-浅层神经网络" class="headerlink" title="第二节 浅层神经网络"></a>第二节 浅层神经网络</h2><h4 id="第三周：浅层神经网络-Shallow-neural-networks"><a href="#第三周：浅层神经网络-Shallow-neural-networks" class="headerlink" title="第三周：浅层神经网络(Shallow neural networks)"></a>第三周：浅层神经网络(Shallow neural networks)</h4><p><a href="http://www.ai-start.com/dl2017/html/lesson1-week3.html">参考这节课网页笔记</a></p><p><a href="https://www.bilibili.com/video/BV1FT4y1E74V?p=25&vd_source=8425538b68a52ed42a5daa09e2318b20">参考视频</a></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E8%8A%82%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221031151808107.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E8%8A%82%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221031151821959.png"></p><h4 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h4><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E8%8A%82%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221031152014677.png"></p><p>sigmoid函数，我们不会在神经网络中使用，只有一种情况会使用在解决0,1二分类问题的时候，只通过输出节点使用sigmoid函数，其他所有节点都是别的函数的时候才可以使用。</p><p>tanh函数</p><p>RelU函数 最为常用  （修正线性单元的函数）</p><p>leaky ReLU函数（a&#x3D;max(0.01Z,Z）</p><p>不能使用线性激活函数，使用线性激活函数进行神经网络正向运算，结果仍然是线性函数的结果没有实际意义（两个线性函数的组合本身就是线性函数），最后仍然像只有一个神经元干的一样。</p><p>总而言之，不能在隐藏层用线性激活函数，可以用<strong>ReLU</strong>或者<strong>tanh</strong>或者<strong>leaky ReLU</strong>或者其他的非线性激活函数，唯一可以用线性激活函数的通常就是输出层；</p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E8%8A%82%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221031164825493.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E8%8A%82%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221031164848655.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E8%8A%82%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221031164857634.png"></p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E8%8A%82%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/image-20221031165015930.png" style="transform: rotate(270deg); zoom: 25%;">]]></content>
+      
+      
+      <categories>
+          
+          <category> 深度学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> DeepLearning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>深度学习 逻辑回归</title>
+      <link href="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/"/>
+      <url>/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/</url>
+      
+        <content type="html"><![CDATA[<h2 id="第一节课二分类问题"><a href="#第一节课二分类问题" class="headerlink" title="第一节课二分类问题"></a>第一节课二分类问题</h2><h4 id="第二周：神经网络的编程基础-Basics-of-Neural-Network-programming"><a href="#第二周：神经网络的编程基础-Basics-of-Neural-Network-programming" class="headerlink" title="第二周：神经网络的编程基础(Basics of Neural Network programming)"></a><u>第二周：神经网络的编程基础(Basics of Neural Network programming)</u></h4><p><a href="http://www.ai-start.com/dl2017/html/lesson1-week2.html">参考这节课网页笔记</a></p><p><a href="https://www.bilibili.com/video/BV1FT4y1E74V?p=7&vd_source=8425538b68a52ed42a5daa09e2318b20">参考视频</a></p><p>输入m个训练样本，每一个样本有n个x属性（比如x1，x2….xn），<strong>另外预测出来的y ’ 我们写为a</strong></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028192921452.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028192946793.png"></p><p>其中由于机器学习与深度学习不同所以将参数b和w分开不再通过向x向量中添加1来使其合在一起</p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028193013596.png"></p><p>这里的求导递推式比较重要，便于后面理解</p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028193222516.png"></p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028193936427.png" style="transform: rotate(270deg); zoom: 25%;"><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028194455846.png"></p><p>推导导数的公式们</p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028194556292.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028194629779.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028194641577.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028194656077.png"></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">z=np.dot(w,x)+b</span><br></pre></td></tr></table></figure><p>矩阵相乘再相加</p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028194831013.png"></p><p>这种numpy方法优化了时间复杂度使得不同for循环</p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028194932960.png"></p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028194944894.png"></p><p>dz&#x3D;a-y  是求L对Z的偏导的值，由于我们有m个样本，则有m个Z值 ，同时根据m个z值预测出的</p><p>m个Y ‘ 值（也是a值），Y矩阵是输入样本的标签值，右下角那个矩阵推导挺有意思。</p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028195226217.png"></p><h5 id="ps：我们这部分课程是先从一个样本的L入手，从而进行各种公式推导，至于J则是m个L相加所得到的值，所以有关求导不会有什么影响，最后将多个求导或者别的运算结果相加除以m即可。"><a href="#ps：我们这部分课程是先从一个样本的L入手，从而进行各种公式推导，至于J则是m个L相加所得到的值，所以有关求导不会有什么影响，最后将多个求导或者别的运算结果相加除以m即可。" class="headerlink" title="ps：我们这部分课程是先从一个样本的L入手，从而进行各种公式推导，至于J则是m个L相加所得到的值，所以有关求导不会有什么影响，最后将多个求导或者别的运算结果相加除以m即可。"></a>ps：我们这部分课程是先从一个样本的L入手，从而进行各种公式推导，至于J则是m个L相加所得到的值，所以有关求导不会有什么影响，最后将多个求导或者别的运算结果相加除以m即可。</h5><p>算法结果，注意别忘了迭代次数，这是一个省略不了的循环，并且我们在这节课使用numpy中的各种矩阵运算函数大大代替了原本的for循环，加快了代码运行速度，numpy函数时间复杂度低的原因可能是由某种优化吧，并且优化强度高。</p><p><img src="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92/image-20221028195907866.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 深度学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> DeepLearning </tag>
             
         </tags>
       
