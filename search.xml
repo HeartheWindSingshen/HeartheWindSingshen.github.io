@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>云计算实验报告</title>
+      <link href="/2023/03/21/%E4%BA%91%E8%AE%A1%E7%AE%97202018150189-%E7%94%B3%E5%BD%A4-%E6%95%B0%E6%8D%AE-%E5%AE%9E%E9%AA%8C3/"/>
+      <url>/2023/03/21/%E4%BA%91%E8%AE%A1%E7%AE%97202018150189-%E7%94%B3%E5%BD%A4-%E6%95%B0%E6%8D%AE-%E5%AE%9E%E9%AA%8C3/</url>
+      
+        <content type="html"><![CDATA[<p>山东大学  计算机科学与技术  学院</p><p>  云计算技术  课程实验报告</p><table><thead><tr><th>学号：202018150189</th><th>姓名： 申彤</th><th>班级： 数据20</th></tr></thead><tbody><tr><td>实验题目：利用云平台搭建个人博客</td><td></td><td></td></tr><tr><td>实验学时：2</td><td>实验日期：   3.14</td><td></td></tr><tr><td>实验目的：熟悉个人博客系统的搭建。具体包括：参考方案：注册Github账号，搭建Hexo环境并实现个人博客搭建，撰写实验报告。</td><td></td><td></td></tr><tr><td>硬件环境： 联网的计算机一台</td><td></td><td></td></tr><tr><td>软件环境：Windows or Linux</td><td></td><td></td></tr><tr><td>实验步骤与内容：本人github地址：<a href="https://github.com/HeartheWindSingshen%E5%8D%9A%E5%AE%A2github%E5%9C%B0%E5%9D%80%EF%BC%9A">https://github.com/HeartheWindSingshen博客github地址：</a>  <a href="https://github.com/HeartheWindSingshen/HeartheWindSingshen.github.io%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9D%80%EF%BC%9Ahttps://02clannad.icu/https://hearthewindsingshen.github.io/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8Hexo%E4%B8%AD%E7%9A%84Matery%E4%B8%BB%E9%A2%98%EF%BC%8C%E7%94%A8%E5%88%B0%E4%BA%86git%EF%BC%8Cnode.js%E7%AD%89%E6%8A%80%E6%9C%AF%E9%83%A8%E7%BD%B2%E6%97%B6%E9%97%B4%E4%B8%BA2022%E5%B9%B412%E6%9C%88%E6%9C%ABMatery%E4%B8%BB%E9%A2%98%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80%EF%BC%9Ahttps://github.com/blinkfox/hexo-theme-matery%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B%EF%BC%9Ahttps://blog.csdn.net/Zonggu/article/details/125923782https://blog.csdn.net/weixin_46399753/article/details/104768713">https://github.com/HeartheWindSingshen/HeartheWindSingshen.github.io博客网站地址：https://02clannad.icu/https://hearthewindsingshen.github.io/博客网站使用Hexo中的Matery主题，用到了git，node.js等技术部署时间为2022年12月末Matery主题项目地址：https://github.com/blinkfox/hexo-theme-matery搭建过程参考教程：https://blog.csdn.net/Zonggu/article/details/125923782https://blog.csdn.net/weixin_46399753/article/details/104768713</a> 由于是静态网页所以可以使用github进行托管，同时由于手中有轻量级服务器闲置也在服务器上部署，并申请了备案号。<img src="/./images/wps1.jpg" alt="img"> <img src="/./images/wps2.jpg" alt="img"> Posts文件夹中有已经写过的博客文件，文件使用markdown文件About,books,categories,contact,friends,images,movies等文件夹对应不同网站功能呈现的内容的md文件。<img src="/./images/wps3.jpg" alt="img"> <img src="/./images/wps4.jpg" alt="img"> Matery主题文件夹 <img src="/./images/wps5.jpg" alt="img"> <img src="/./images/wps6.jpg" alt="img"> Hexo技术搭建博客的基础配置，包括生成部署文件夹git上传地址，基础博客命名，语言时间格式，是否适配手机，是否使用CDN等等<img src="/./images/wps7.jpg" alt="img"> <img src="/./images/wps8.jpg" alt="img"> Matery主题配置用于配置Matery主题的各种功能包括但不限于菜单栏及具体功能子目录具体功能站点建成时间计算，访问量计算展示是否使用开始壁纸轮播图使用开始视频，是否自动播放，视频代替壁纸自动播放音乐功能 我是直接找到woqq音乐歌单的id 8743277219使用视频功能 直接加一个视频链接的iframe分享的url地址，我用的b站视频的地址博客文章推荐，推荐标题，排版网站logo，名字，背景等联系方式如qq github email 知乎等激活文章打赏部分复制博客追加版权信息，类似csdn文章字数统计阅读时长统计总字数统计更新日期等界面彩带，爱心，随鼠标动的动画效果归档中的个人项目展示及地址，技能点，文章整理时间线发表时间 像github的项目上传随时间那个网格可视化评论交流模块，个人相册模块手机专用的界面配置优化，晚上深色模式CDN加速，使用图床技术，绘制图表等设置看板娘人偶，个人博客标签整理，站内搜索<img src="/./images/wps9.jpg" alt="img"> <img src="/./images/wps10.jpg" alt="img"> <img src="/./images/wps11.jpg" alt="img"> <img src="/./images/wps12.jpg" alt="img"> 效果展示主界面<img src="/./images/wps13.jpg" alt="img"> <img src="/./images/wps14.jpg" alt="img"> <img src="/./images/wps15.jpg" alt="img"> 深色模式<img src="/./images/wps16.jpg" alt="img"> 标签<img src="/./images/wps17.jpg" alt="img"> 文章分类<img src="/./images/wps18.jpg" alt="img"> 归档<img src="/./images/wps19.jpg" alt="img"> <img src="/./images/wps20.jpg" alt="img"> 关于 自我介绍<img src="/./images/wps21.jpg" alt="img"> <img src="/./images/wps22.jpg" alt="img"> <img src="/./images/wps23.jpg" alt="img"> <img src="/./images/wps24.jpg" alt="img"> 友情链接<img src="/./images/wps25.jpg" alt="img"> 音乐<img src="/./images/wps26.jpg" alt="img"> 视频<img src="/./images/wps27.jpg" alt="img"> <img src="/./images/wps28.jpg" alt="img"> <img src="/./images/wps29.jpg" alt="img"> 移动端<img src="/./images/wps30.jpg" alt="img"> <img src="/./images/wps31.jpg" alt="img"> <img src="/./images/wps32.jpg" alt="img"> 站内搜索<img src="/./images/wps33.jpg" alt="img"> <img src="/./images/wps34.jpg" alt="img"> 以上，具体可以访问网页详细查看。</td><td></td><td></td></tr><tr><td>结论分析与体会：当初12月末在家，看到了许多人自己做的网页博客觉得很有意思，就尝试去做了下，也查了许多技术以及各种主题，发现Hexo相对来说会比较简单并且网上教程比较多，由于有主题框架的帮助使得搭建博客变得异常简单和搭积木一样，只要注意一些语法上的细节和注释上的要点一步一步弄，最后输入命令行build可以直接部署的index.js文件和其对应的文件夹即可，同时会git提交到对应的仓库中，我设置两个分支，一个用于上传存储生成的文件一个用于上传blog文件夹。由于只是静态网页，后期博客也写的比较少，就比较疏于维护，不再怎么关注，希望之后会做出更好的，一行代码一行代码码出来的有前后端，功能健壮，便于维护，安全性高的网页项目。<img src="/./images/wps35.jpg" alt="img"></td><td></td><td></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>深度学习 深层神经网络</title>
       <link href="/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
       <url>/2022/12/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E8%8A%82%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</url>
